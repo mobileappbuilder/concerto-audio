@@ -1,0 +1,14 @@
+<%= javascript_include_tag "concerto_audio/application" %>
+<%= stylesheet_link_tag "concerto_audio/application" %>
+
+<fieldset>
+  <legend><span>Audio</span></legend>
+  <%= form.fields_for :config do |config| %>
+    <div class="clearfix">
+      <%= config.label :url, "URL" %>
+      <div class="input">
+        <%= config.text_field :url, :placeholder => 'http://69.166.45.47:8000/;?topspeed=on&0.09971104841679335', :class => "input-xxlarge", :value => @content.config['url'] %>
+      </div>
+    </div>
+  <% end %>
+</fieldset>
