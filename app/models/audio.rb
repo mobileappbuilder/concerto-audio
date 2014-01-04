@@ -1,6 +1,6 @@
 class Audio < Content
   DISPLAY_NAME = 'Audio'
-  after_initialize :set_kind, :create_config, :load_info
+  after_initialize :set_kind, :create_config
 
   after_find :load_config
   before_validation :save_config

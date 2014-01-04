@@ -53,7 +53,7 @@ concerto.frontend.Content.Audio = function(data) {
     this.url_parms_ = '';
   }
 
-  this.duration = 0;
+  this.duration = 60 * 60 * 24;  // 24 hours
 };
 goog.inherits(concerto.frontend.Content.Audio, concerto.frontend.Content);
 

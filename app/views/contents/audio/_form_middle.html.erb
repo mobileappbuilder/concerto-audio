@@ -1,0 +1,22 @@
+<fieldset>
+  <legend><span><%=t('contents.provide_details')%></span></legend>
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="clearfix">
+        <%= form.label :name %>
+        <%= form.text_field :name, :style => "width: 85%;" %>
+      </div>
+
+      <%= render :partial => 'contents/form_elements/dates', :locals => {:form => form} %>
+    </div>
+    <%= form.hidden_field :duration, :value => ConcertoConfig[:max_content_duration] %>
+  </div>
+
+</fieldset>
+
+<fieldset>
+  <legend><span><%=t('contents.submit_to_feeds')%></span></legend>
+  <div class="clearfix">
+    <%= render :partial => 'contents/form_elements/feeds' %>
+  </div>
+</fieldset>
