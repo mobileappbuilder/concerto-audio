@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "Add streaming audio such as shoutcast to Concerto 2."
   s.license     = 'Apache 2.0'
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib,public}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.12"
 
