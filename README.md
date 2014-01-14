@@ -1,5 +1,5 @@
 # Concerto 2 Audio Plugin
-This plugin provides support to add audio content in Concerto 2, such as shoutcast.
+This plugin provides support to add audio content in Concerto 2, such as shoutcast or icecast.
 
 1.  Add to your Gemfile: ```gem 'concerto_audio'```
 2.  ```bundle install```
