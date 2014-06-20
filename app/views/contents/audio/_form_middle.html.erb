@@ -11,12 +11,4 @@
     </div>
     <%= form.hidden_field :duration, :value => ConcertoConfig[:max_content_duration] %>
   </div>
-
-</fieldset>
-
-<fieldset>
-  <legend><span><%=t('contents.submit_to_feeds')%></span></legend>
-  <div class="clearfix">
-    <%= render :partial => 'contents/form_elements/feeds' %>
-  </div>
 </fieldset>
